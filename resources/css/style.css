@@ -19,14 +19,6 @@ header {
     margin: 0rem 0rem 3rem 0rem;
 }
 
-/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
-@media only screen and (max-width: 1024px) {
-    header {
-      height: 22rem;
-      padding-top: 0;
-      width: 100%;
-      }
-}
 .ninesixtycontainer {
     max-width: 960px;
     margin: auto;
@@ -89,25 +81,6 @@ h2.looksee {
     margin-top: 10rem;
 }
 
-/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
-@media only screen and (max-width: 1024px) {
-    h2 {
-    font-size: 1.33rem;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-   h2.looksee {
-    padding: 0;
-    }
-
-   .dontlookbox {
-      margin-top: 5rem;
-      margin-right: 2rem;
-      padding: .75rem 4rem;
-      }
-}
-
 .services {
     justify-content: center; 
     display: flex;
@@ -166,14 +139,78 @@ img {
     background-color: azure;
   }
 
-/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
-@media only screen and (max-width: 1024px) {
-    footer {
-    width: 100%;
-    }
-}
 footer img {
     height: 1.5rem;
     width: auto;
     margin: 0rem 1rem 0rem 0rem;
+}
+
+/*This section is for the display between mobile and tablets or on a screen having resolution of min-width 1025px*/
+@media only screen and (min-width: 1025px) {
+.ninesixtycontainer .menu span.mobile {
+        display: none;
+    }
+}
+
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
+@media only screen and (max-width: 1024px) {
+    header {
+      height: 22rem;
+      padding-top: 0;
+      width: 100%;
+      }
+    
+    h2 {
+    font-size: 1.33rem;
+    font-weight: bold;
+    line-height: 1.2;
+    }
+
+   h2.looksee {
+    padding: 0;
+    }
+
+   .dontlookbox {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    padding: .75rem 4rem;
+      }
+    
+    footer {
+    width: 100%;
+    }
+}
+
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 470px*/
+@media only screen and (max-width: 470px) {
+    header {
+        background-position: 20%;
+        height: 17rem;
+        padding-top: 0;
+        width: 100%;
+    }
+    
+    .ninesixtycontainer .menu span.tab {
+        display: none;
+    }
+    
+    h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    }
+
+   h2.looksee {
+    padding: 0rem;
+    }
+
+   .dontlookbox {
+    margin: 9rem 0rem 0rem 0rem;
+    width: 100%;
+    text-align: center;
+      }
+    
+    footer {
+    width: 100%;
+    }
 }
