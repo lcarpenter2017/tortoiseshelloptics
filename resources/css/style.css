@@ -170,6 +170,10 @@ footer img {
     padding: 0;
     }
 
+    .ninesixtycontainer .menu span.tab {
+        display: none;
+    }
+    
    .dontlookbox {
     margin-top: 5rem;
     margin-right: 2rem;
@@ -181,16 +185,18 @@ footer img {
     }
 }
 
-/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 470px*/
-@media only screen and (max-width: 470px) {
+/*This section is for the display between mobile and tablets or on a screen having resolution of max-width 640px*/
+@media only screen and (max-width: 640px) {
     header {
         background-position: 20%;
         height: 17rem;
-        padding-top: 0;
-        width: 100%;
     }
     
-    .ninesixtycontainer .menu span.tab {
+    nav .logo {
+        align-items: stretch;
+    }
+    
+   .logo span {
         display: none;
     }
     
@@ -208,9 +214,45 @@ footer img {
     margin: 9rem 0rem 0rem 0rem;
     width: 100%;
     text-align: center;
+    padding 1rem 0;
       }
     
+    .services {
+        margin: 3.77rem 0rem 0rem 0rem;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .services .images {
+        margin-bottom: 1.54rem;
+        font-size: 0.77rem;
+        text-align: center;
+    }
+    
+    .services {
+        margin-top: 3.77rem;
+        margin-bottom: 4rem;
+        flex-direction: column;
+    }
+    
+    .services .philosophy {
+        margin-bottom: 4rem;
+    }
+        
+    services .philosophy .caption, .services .appt .caption {
+        width: 100%;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+  
     footer {
-    width: 100%;
+        margin-top: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer span.tab {
+        display: none;
     }
 }
