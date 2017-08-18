@@ -1,93 +1,93 @@
 @charset "utf-8";
 
 html {
-    font-family: Helvetica, sans-serif;
-    font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 body {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 header {
-    background-image: url(../images/glasses-bg.png);
-    height: 30rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 1rem;
-    margin: 0rem 0rem 3rem 0rem;
+  background-image: url(../images/glasses-bg.png);
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  margin: 0rem 0rem 3rem 0rem;
 }
 
 .ninesixtycontainer {
-    max-width: 960px;
-    margin: auto;
+  max-width: 960px;
+  margin: auto;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 0;
-    color: white;
-    background-color: cadetblue;    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: white;
+  background-color: cadetblue;    
 }
 
 nav .logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav img {
-    margin-left: 2rem;
-    margin-right: 1rem;
-    height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  height: 1.5rem;
 }
 
 nav span {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 nav a, nav span {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .menu {
-    display: flex;
-    margin: 0;
+  display: flex;
+  margin: 0;
 }
 
 header .flex {
-    justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1.2;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 h2.looksee {
-    padding: 1.5rem 5rem;
-    }
+  padding: 1.5rem 5rem;
+}
 
 .dontlookbox {
-    background-color: white;
-    margin-top: 10rem;
+  background-color: white;
+  margin-top: 10rem;
 }
 
 .services {
-    justify-content: center; 
-    display: flex;
-    max-width: 1045px;
-    margin: 0rem auto 3rem auto;
-    padding: 0px;
-    line-height: 1.5;
+  justify-content: center; 
+  display: flex;
+  max-width: 960px;
+  margin: 0rem auto 3rem auto;
+  padding: 0px;
+  line-height: 1.5;
 }
 
 .services .images {
@@ -96,163 +96,167 @@ h2.looksee {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin: 3rem;
+  margin: 0 auto;
   width: 5rem;
   height: 8rem;
 }
 
 .images img {
-    margin-bottom: 1rem;
-    width: 5rem;
+  margin-bottom: 1rem;
+  width: 5rem;
 }
 
 img {
-    border-style: none;
+  border-style: none;
 }
 
 .images img.paper-icon {
-    width: 3.5rem;
+  width: 3.5rem;
 }
 
 .services .philosophy, .services .appt{
-    max-width: 35%;
-    margin: 0% 2.5% 0% 2.5%;
+  max-width: 35%;
+  margin: 0% 2.5% 0% 2.5%;
 }
 
 .services .philosophy .caption, .services .appt .caption {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    margin: 0rem 0rem 1rem 0rem;
-    padding: 0.5rem 1.25rem;
-    max-width: 10rem;
-    background-color: cadetblue;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0.5rem 1.25rem;
+  max-width: 10rem;
+  background-color: cadetblue;
 }
 
-  footer {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 5rem auto 0 auto;
-    padding: 4rem;
-    max-width: 816px;
-    background-color: azure;
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5rem auto 0 auto;
+  padding: 4rem;
+  max-width: 816px;
+  background-color: azure;
   }
 
 footer img {
-    height: 1.5rem;
-    width: auto;
-    margin: 0rem 1rem 0rem 0rem;
+  height: 1.5rem;
+  width: auto;
+  margin: 0rem 1rem 0rem 0rem;
 }
 
 /*This section is for the display between mobile and tablets or on a screen having resolution of min-width 1025px*/
 @media only screen and (min-width: 1025px) {
-.ninesixtycontainer .menu span.mobile {
-        display: none;
-    }
+  .ninesixtycontainer .menu span.mobile {
+    display: none;
+  }
 }
 
 /*This section is for the display between mobile and tablets or on a screen having resolution of max-width 768px*/
 @media only screen and (max-width: 1024px) {
-    header {
-      height: 22rem;
-      padding-top: 0;
-      width: 100%;
-      }
+  header {
+    height: 22rem;
+    padding-top: 0;
+    width: 100%;
+  }
     
-    h2 {
+  h2 {
     font-size: 1.33rem;
     font-weight: bold;
     line-height: 1.2;
-    }
+  }
 
-   h2.looksee {
+  h2.looksee {
     padding: 0;
-    }
+  }
 
-    .ninesixtycontainer .menu span.tab {
-        display: none;
-    }
+  .ninesixtycontainer .menu span.tab {
+    display: none;
+  }
     
-   .dontlookbox {
+  .dontlookbox {
     margin-top: 5rem;
     margin-right: 2rem;
     padding: .75rem 4rem;
-      }
+  }
     
-    footer {
+  footer {
     width: 100%;
-    }
+  }
 }
 
 /*This section is for the display between mobile and tablets or on a screen having resolution of max-width 640px*/
 @media only screen and (max-width: 640px) {
-    header {
-        background-position: 20%;
-        height: 17rem;
-    }
+  header {
+    background-position: 20%;
+    height: 17rem;
+  }
     
-    nav .logo {
-        align-items: stretch;
-    }
+  nav .logo {
+    align-items: stretch;
+  }
     
-   .logo span {
-        display: none;
-    }
+  .logo span {
+    display: none;
+  }
     
-    h2 {
+  h2 {
     font-size: 1rem;
     font-weight: bold;
     line-height: 1.2;
-    }
+  }
 
-   h2.looksee {
+  h2.looksee {
     padding: 0rem;
-    }
+  }
 
-   .dontlookbox {
+  .dontlookbox {
     margin: 9rem 0rem 0rem 0rem;
     width: 100%;
     text-align: center;
     padding 1rem 0;
-      }
+  }
     
-    .services {
-        margin: 3.77rem 0rem 0rem 0rem;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+  .services {
+    margin: 3.77rem 0rem 0rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
     
-    .services .images {
-        margin-bottom: 1.54rem;
-        font-size: 0.77rem;
-        text-align: center;
-    }
+  .services .images {
+    margin-bottom: 1.54rem;
+    margin-top: 1rem;
+    font-size: 0.77rem;
+    text-align: center;
+    height: 6rem;
+  }
     
-    .services {
-        margin-top: 3.77rem;
-        margin-bottom: 4rem;
-        flex-direction: column;
-    }
+  .services .philosophy, .services .appt{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+ 
+  .services .philosophy {
+    margin-bottom: 4rem;
+  }
     
-    .services .philosophy {
-        margin-bottom: 4rem;
-    }
-        
-    services .philosophy .caption, .services .appt .caption {
-        width: 100%;
-        margin-bottom: 1rem;
-        font-size: 1rem;
-    }
-  
-    footer {
-        margin-top: 0;
-        width: 100%;
-        justify-content: center;
-    }
+   .services .philosophy .caption, .services .appt .caption {
+      max-width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      justify-content: center;
+      text-align: center;
+  }
+    
+   footer {
+     margin-top: 0;
+     padding: 4rem 0rem;
+     width: 100%;
+     justify-content: center;
+  }
 
     footer span.tab {
-        display: none;
-    }
+    display: none;
+  }
 }
